@@ -1,0 +1,27 @@
+{
+  "name": "ws-mongoss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "front": "cd client && npm start",
+    "back": "nodemon server",
+    "dev" : "concurrently \"npm run front\" \"npm run back\""
+  },
+  "keywords": [
+    "express",
+    "node",
+    "mongo"
+  ],
+  "author": "kawther",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.6.0",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "mongoose": "^6.8.2",
+    "nodemon": "^2.0.20"
+  }
+}
